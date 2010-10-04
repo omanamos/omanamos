@@ -1,0 +1,36 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #1B1112;
+}
+#main{
+	-moz-border-radius: 0 0 15px 15px;
+	border-radius: 0 0 15px 15px;
+	background: #4FDE43;
+	width: 800px;
+	height: 860px;
+}
+#menu_bar_wrapper{
+	-moz-border-radius: 15px 15px 0 0;
+	border-radius: 15px 15px 0 0;
+	background: #138A29;
+	width: 800px;
+	height: 40px;
+}
+	#menu_bar_content{
+		margin-left: 15px;
+	}
+		#menu_bar_content .menu_bar_link{
+			float: left;
+			padding: 11px 15px;
+			cursor: pointer;
+		}
+#page{
+	width: 800px;
+	height: 900px;
+	margin: auto;
+}
+	#page_title{
+		font-size: 30px;
+		font-weight: bold;
+		margin: 20px 10px;
+	}
