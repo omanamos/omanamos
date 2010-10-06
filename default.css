@@ -2,13 +2,42 @@ body{
 	font-family: Arial, Helvetica, sans-serif;
 	color: #1B1112;
 }
+h1{
+	font-size: 24px;
+	margin-top: 0;
+}
+h2{
+	font-size: 16px;
+	margin: 5px 0px 5px 10px;
+}
 #main{
 	-moz-border-radius: 0 0 15px 15px;
 	border-radius: 0 0 15px 15px;
 	background: #4FDE43;
 	width: 800px;
-	height: 860px;
+	overflow: hidden;
 }
+	#left_content{
+		margin: 20px;
+		width: 500px;
+		overflow: hidden;
+	}
+		#description{
+			margin-left: 10px;
+		}
+		#gmap, #address{
+			overflow: hidden;
+			padding: 0px 0px 20px 0px;
+		}
+		#address div{
+			margin-left: 20px;
+		}
+		#property_content{
+			display: none;
+		}
+		#zoning_content{
+			display: none;
+		}
 #menu_bar_wrapper{
 	-moz-border-radius: 15px 15px 0 0;
 	border-radius: 15px 15px 0 0;
@@ -21,7 +50,7 @@ body{
 	}
 		#menu_bar_content .menu_bar_link{
 			float: left;
-			padding: 11px 15px;
+			padding: 11px 15px 10px 15px;
 			cursor: pointer;
 		}
 #page{
