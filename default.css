@@ -10,6 +10,11 @@ h2{
 	font-size: 16px;
 	margin: 5px 0px 5px 10px;
 }
+h3{
+	font-size: 22px;
+	margin-top: 0;
+	text-align: center;
+}
 #main{
 	-moz-border-radius: 0 0 15px 15px;
 	border-radius: 0 0 15px 15px;
@@ -19,8 +24,9 @@ h2{
 }
 	#left_content{
 		margin: 20px;
-		width: 500px;
+		width: 430px;
 		overflow: hidden;
+		float: left;
 	}
 		#description{
 			margin-left: 10px;
@@ -38,6 +44,35 @@ h2{
 		#zoning_content{
 			display: none;
 		}
+	#right_content{
+		float: right;
+		width: 300px;
+		margin: 15px;
+	}
+		#contact_form{
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+			width: 300px;
+			background: #3EB334;
+			height: 500px;
+			overflow: hidden;
+		}
+			#contact_form form{
+				margin: 20px;
+				overflow: hidden;
+			}
+				#contact_form p.note{
+					font-size: 12px;
+				}
+				#contact_form input[type="text"]{
+					display: block;
+					margin: 0px auto 20px auto;
+					height: 30px;
+					font-size: 18px;
+					color: #CCCCCC;
+					border: 1px solid #666;
+					padding: 5px;
+				}
 #menu_bar_wrapper{
 	-moz-border-radius: 15px 15px 0 0;
 	border-radius: 15px 15px 0 0;
