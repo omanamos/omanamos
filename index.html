@@ -5,6 +5,8 @@
 		
 		<script src="jquery.js" type="text/javascript"></script>
 		<script src="jquery.color.js" type="text/javascript"></script>
+		<script src="jquery.validate.js" type="text/javascript"></script>
+		<script src="jquery.formatter.js" type="text/javascript"></script>
 		<script src="default.js" type="text/javascript"></script>
 	</head>
 	<body>
@@ -37,7 +39,7 @@
 							</div>
 						</div>
 						<div id="gmap">
-							<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=&amp;daddr=42.92995,-88.119988&amp;hl=en&amp;geocode=&amp;mra=mift&amp;mrsp=0&amp;sz=17&amp;sll=42.928109,-88.120533&amp;sspn=0.005994,0.009645&amp;ie=UTF8&amp;ll=42.928085,-88.12048&amp;spn=0.021996,0.036478&amp;z=14&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=d&amp;source=embed&amp;saddr=&amp;daddr=42.92995,-88.119988&amp;hl=en&amp;geocode=&amp;mra=mift&amp;mrsp=0&amp;sz=17&amp;sll=42.928109,-88.120533&amp;sspn=0.005994,0.009645&amp;ie=UTF8&amp;ll=42.928085,-88.12048&amp;spn=0.021996,0.036478&amp;z=14" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+							<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=&amp;daddr=42.92995,-88.119988&amp;hl=en&amp;geocode=&amp;mra=mift&amp;mrsp=0&amp;sz=17&amp;sll=42.928109,-88.120533&amp;sspn=0.005994,0.009645&amp;ie=UTF8&amp;ll=42.928085,-88.12048&amp;spn=0.021996,0.036478&amp;z=14&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=d&amp;source=embed&amp;saddr=&amp;daddr=42.92995,-88.119988&amp;hl=en&amp;geocode=&amp;mra=mift&amp;mrsp=0&amp;sz=17&amp;sll=42.928109,-88.120533&amp;sspn=0.005994,0.009645&amp;ie=UTF8&amp;ll=42.928085,-88.12048&amp;spn=0.021996,0.036478&amp;z=14" style="color:#0000FF;text-align:left" target="_blank">View Larger Map</a></small>
 						</div>
 						Come and take a walk through the woods.
 					</div>
@@ -54,13 +56,14 @@
 				</div>
 				<div id="right_content">
 					<div id="contact_form">
-						<form>
+						<form id="contact_form_content" action="" method="post">
 							<h3>Contact Me</h3>
 							<p>Interested in the property? Please fill out this form so I can contact you.</p>
 							<p class="note">Please provide your prefered contact information.</p>
-							<input type="text" name="name" id="contact_name" value="Name" />
-							<input type="text" name="email" id="contact_email" value="Email" />
-							<input type="text" name="phone" id="contact_phone" value="Phone Number" />
+							<input type="text" name="name" id="contact_name" value="Name" class="required default_value" />
+							<input type="text" name="email" id="contact_email" value="Email" class="required email default_value" />
+							<input type="text" name="phone" id="contact_phone" value="Phone Number" class="required phone default_value" />
+							<input type="submit" value="Contact Me" />
 						</form>
 					</div>
 				</div>
